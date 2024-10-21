@@ -1,0 +1,20 @@
+.gallery {
+  padding: 0;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-item {
+  width: calc((100% - 2 * 24) / 3);
+  transition: 0.3s;
+}
+.gallery-item:focus,
+.gallery-item:hover {
+  transform: scale(1.05);
+}
